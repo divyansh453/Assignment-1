@@ -243,6 +243,7 @@ function buildList(){
                 body:JSON.stringify({'body':body,'tech':tech})
 			}).then((response) => {
 				buildList()
+				document.getElementById('form').reset()
 			})
 		}
     
